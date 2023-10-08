@@ -1,0 +1,83 @@
+#cigi{
+    width: 75px;
+    height: 75px;
+    border-radius: 25%;
+}
+
+#cigi:hover{
+    transform: rotate(360deg);
+    transition-duration: 5s;
+}
+
+#bagarelló{
+    width: 1900px;
+    height: 1000px;
+    opacity: 0;
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#bagarelló:hover{
+    width: 1650px;
+    height: 800px;
+    opacity: 1;
+    rotate: 360deg;
+}
+
+#reassambled{
+    width: 1850px;
+    height: 900px;
+}
+
+#nyíl{
+    width: 400px;
+    height: 200px;
+    opacity: 1;
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+    top: 1850px;
+    left: 220px;
+    rotate: -45deg;
+}
+
+#nyíl:hover{
+    rotate: 315deg;
+}
+
+#dedication-text{
+    position: absolute;
+    top: 1950px;
+    left: 325px;
+    font-size: xx-large;
+    font-weight: bolder;
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#dedication-text:hover{
+    color: brown;
+    rotate: 4000deg;
+}
+
+#kemeny{
+    transition: height 6s, width 10s, all 4s;
+    transition-timing-function: ease-in-out;
+}
+
+#kemeny:hover{
+    position: relative;
+    left: 250px;
+    rotate: 360deg;
+    transform: skew(15deg, 7.348765deg);
+}
+
+#halálpálca{
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#halálpálca:hover{
+    transform: matrix3d(0.5, 0, -0.866025, 0, 0.595877, 1.2, -1.03209, 0, 0.866025, 0, 0.5, 0, 25.9808, 0, 15, 1);
+    rotate: 90deg;
+}
