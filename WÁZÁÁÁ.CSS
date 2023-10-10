@@ -32,17 +32,13 @@
 #nyíl{
     width: 400px;
     height: 200px;
-    opacity: 1;
+    opacity: 0;
     transition: height 3s, width 1s, all 3s;
     transition-timing-function: ease-in-out;
     position: absolute;
     top: 1850px;
     left: 220px;
     rotate: -45deg;
-}
-
-#nyíl:hover{
-    rotate: 315deg;
 }
 
 #dedication-text{
@@ -53,31 +49,69 @@
     font-weight: bolder;
     transition: height 3s, width 1s, all 3s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
 }
 
-#dedication-text:hover{
-    color: brown;
+#komplikáltcigi:hover #dedication-text{
+    color: magenta;
     rotate: 4000deg;
+    opacity: 1;
+}
+
+#komplikáltcigi:hover #nyíl{
+    rotate: 315deg;
+    opacity: 1;
 }
 
 #kemeny{
-    transition: height 6s, width 10s, all 4s;
+    transition: height 6s, width 10s, all s;
     transition-timing-function: ease-in-out;
 }
 
 #kemeny:hover{
-    position: relative;
-    left: 250px;
+    transform: translateX(500px) skew(15deg, 7.348765deg);
     rotate: 360deg;
-    transform: skew(15deg, 7.348765deg);
 }
 
 #halálpálca{
     transition: height 3s, width 1s, all 3s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 
 #halálpálca:hover{
-    transform: matrix3d(0.5, 0, -0.866025, 0, 0.595877, 1.2, -1.03209, 0, 0.866025, 0, 0.5, 0, 25.9808, 0, 15, 1);
+    transform: matrix3d(0.5, 0, -0.866025, 0, 0.595877, 1.2, -1.03209, 0, 10.866025, 0, 0.5, 0, -25.9808, 0, 15, 1) translate3d(233px, 500px, 100px);
     rotate: 90deg;
+    opacity: 0;
+}
+
+#elektromosnyíl{
+    position: relative;
+    left: 450px;
+    bottom: 120px;
+    height: 200px;
+    width: 350px;
+    opacity: 0;
+    transition: height 6s, width 10s, all 4s;
+    transition-timing-function: ease;
+    transition-delay: 4s;
+}
+
+#karika{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    bottom: 120px;
+    right: 170px;
+    opacity: 0;
+    transition: height 6s, width 10s, all 4s;
+    transition-timing-function: ease;
+    transition-delay: 4s;
+}
+
+#komplikáltcigi:hover #karika{
+    opacity: 1;
+}
+
+#komplikáltcigi:hover #elektromosnyíl{
+    opacity: 1;
 }
