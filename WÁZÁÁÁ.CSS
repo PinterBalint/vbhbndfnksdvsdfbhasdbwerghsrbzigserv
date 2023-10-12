@@ -1,8 +1,7 @@
 body{
     overflow-x: hidden;
     background-image: url(images/hatter.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
 }
 
 p{
@@ -140,15 +139,6 @@ p{
     opacity: 1;
 }
 
-#bizonyíték{
-    transition: height 3s, width 1s, all 3s;
-    transition-timing-function: ease-in-out;
-}
-
-#bizonyíték:hover{
-    transform: translateX(500px) translateY(-250px) translateZ(320px) matrix(0.4, 0, 0.5, 1.2, 60, 10);
-}
-
 #reassambled{
     width: 150px;
     height: 100px;
@@ -164,4 +154,41 @@ p{
     position: relative;
     left: 0px;
     rotate: 1800deg;
+}
+
+#bizonyíték{
+    position: relative;
+    width: 820px;
+    height: 1400px;
+    left: 600px;
+    margin-top: 150px;
+    background: rgba(0, 0, 0, 0);
+    transform: rotate(0deg) skew(25deg) scale(0.8);
+    transition: 0.5s;
+}
+
+#bizonyíték img{
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#bizonyíték:hover img:nth-child(4){
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+#bizonyíték:hover img:nth-child(3){
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+#bizonyíték:hover img:nth-child(2){
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+
+#bizonyíték:hover img:nth-child(1){
+    transform: translate(40px, -40px);
+    opacity: 0.4;
 }

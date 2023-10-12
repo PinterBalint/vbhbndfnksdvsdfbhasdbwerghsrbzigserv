@@ -27,10 +27,13 @@
                 <li class="nav-item">
                     <img id="cigi" class="float-end" src="images/Képernyőkép 2023-10-08 213436.png" alt="">
                 </li>
+                <li class="nav-item">
+                    <button onclick="gomb()">Vicces gomb</button>
+                </li>
             </ul>
         </div>
     </nav>
-    <section>
+    <section  id="animate">
         <article>
             <h1 id="höhö">A ts1g4r3tt4</h1>
             <p>
@@ -83,9 +86,19 @@
                     <p>
                         A csikk olyan – a cigarettából származó – vegyi anyagokat tartalmaz, amelyek szennyezik az élővizeket és az ivóvízkészleteket. Egy 2014-es tanulmányban halakon vizsgálták a cigaretta és a szűrő hatásait. Ennek során azt állapították meg, hogy a vízben lévő, ép, teljes cigaretta, valamint a visszamaradt csikk is mérgező hatású volt a kísérletben részt vevő fajokra. Ehhez viszonylag alacsony koncentráció is elég volt, így már 1-2 cigarettacsikk is elég volt literenként, hogy 96 órán belül halált okozzon a halak 50%-ának. Ugyanezen tanulmányban azt is megállapították, hogy a használt cigarettaszűrő mérgezőbb hatású, mint az új, használaton még nem átesett szűrő.[33]
                     </p>
-                    <img id="bizonyíték" src="images/bizonyíték.png" alt="">
+                    <div id="bizonyíték">
+                        <img  src="images/bizonyíték.png" alt="">
+                        <img  src="images/bizonyíték.png" alt="">
+                        <img  src="images/bizonyíték.png" alt="">
+                        <img  src="images/bizonyíték.png" alt="">
+                    </div>
         </article>
     </section>
-<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script>
+    function gomb() {
+    let x = document.getElementById("animate")
+    x.style.transform; matrix3d(12,  -5,  -0.866025, 15,   -11.2,    -1.03209,  6,0.866025,  -8,  10.5,  -7,25.9808,  0,  15,    1);
+    }
+</script>
 </body>
 </html>
