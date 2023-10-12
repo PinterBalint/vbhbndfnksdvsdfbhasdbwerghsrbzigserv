@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 #cigi{
     width: 75px;
     height: 75px;
@@ -64,7 +68,7 @@
 }
 
 #kemeny{
-    transition: height 6s, width 10s, all s;
+    transition: height 6s, width 10s, all 4s;
     transition-timing-function: ease-in-out;
 }
 
@@ -114,4 +118,30 @@
 
 #komplikáltcigi:hover #elektromosnyíl{
     opacity: 1;
+}
+
+#bizonyíték{
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#bizonyíték:hover{
+    transform: translateX(500px) translateY(-250px) translateZ(320px) matrix(0.4, 0, 0.5, 1.2, 60, 10);
+}
+
+#reassambled{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: 800px;
+    transition: height 3s, width 1s, all 3s;
+    transition-timing-function: ease-in-out;
+}
+
+#reassambled:hover{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    rotate: 1800deg;
 }
