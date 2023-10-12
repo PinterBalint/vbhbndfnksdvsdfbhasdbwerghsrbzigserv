@@ -8,6 +8,18 @@ body{
 p{
     text-indent: 15px;
     color: black;
+    font-style: italic;
+    animation: shake 2s infinite ease-in-out normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes shake{
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-10deg);}
+    60%{transform: rotate(5deg);}
+    80%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
 }
 
 #cigi{
